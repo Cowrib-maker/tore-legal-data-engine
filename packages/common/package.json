@@ -1,0 +1,33 @@
+{
+  "name": "@tore-legal-data-engine/common",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -b --watch",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "eslint src",
+    "test": "vitest run --config ../../vitest.config.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "eslint": "^9.21.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}

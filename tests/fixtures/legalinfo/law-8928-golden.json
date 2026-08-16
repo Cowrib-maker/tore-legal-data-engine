@@ -1,0 +1,2574 @@
+{
+  "sourceUrl": "https://legalinfo.mn/mn/detail?lawId=8928",
+  "sha256": "9639ceb8c45c525c989a96c03fd87f09e64b849a87460f5cf0ad5a77692aa78f",
+  "counts": {
+    "nodes": 320,
+    "articles": 37,
+    "chapters": 6,
+    "paragraphs": 133,
+    "clauses": 143,
+    "annexes": 0
+  },
+  "nodes": [
+    {
+      "locator": "doc",
+      "type": "DOCUMENT",
+      "parentLocator": null,
+      "article": null,
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "ch-1",
+      "type": "CHAPTER",
+      "parentLocator": "doc",
+      "article": null,
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-1",
+      "type": "ARTICLE",
+      "parentLocator": "ch-1",
+      "article": "1",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-1/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-1",
+      "article": "1",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-2",
+      "type": "ARTICLE",
+      "parentLocator": "ch-1",
+      "article": "2",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-2/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-2",
+      "article": "2",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-2/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-2",
+      "article": "2",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-2^1",
+      "type": "ARTICLE",
+      "parentLocator": "ch-1",
+      "article": "2^1",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-2^1/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-2^1",
+      "article": "2^1",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-3",
+      "type": "ARTICLE",
+      "parentLocator": "ch-1",
+      "article": "3",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-3/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-3",
+      "article": "3",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-3/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-3/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-3/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-3/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-3/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-3/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-3/p-1/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "7"
+    },
+    {
+      "locator": "art-3/p-1/c-8",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "8"
+    },
+    {
+      "locator": "art-3/p-1/c-9",
+      "type": "CLAUSE",
+      "parentLocator": "art-3/p-1",
+      "article": "3",
+      "paragraph": "1",
+      "clause": "9"
+    },
+    {
+      "locator": "art-4",
+      "type": "ARTICLE",
+      "parentLocator": "ch-1",
+      "article": "4",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-4/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-4",
+      "article": "4",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-4/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-4/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-4/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-4/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-4/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-4/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-4/p-1/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "7"
+    },
+    {
+      "locator": "art-4/p-1/c-8",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "8"
+    },
+    {
+      "locator": "art-4/p-1/c-9",
+      "type": "CLAUSE",
+      "parentLocator": "art-4/p-1",
+      "article": "4",
+      "paragraph": "1",
+      "clause": "9"
+    },
+    {
+      "locator": "ch-2",
+      "type": "CHAPTER",
+      "parentLocator": "doc",
+      "article": null,
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-5",
+      "type": "ARTICLE",
+      "parentLocator": "ch-2",
+      "article": "5",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-5/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-5",
+      "article": "5",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-5/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-5/p-1",
+      "article": "5",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-5/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-5/p-1",
+      "article": "5",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-5/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-5/p-1",
+      "article": "5",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-5/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-5/p-1",
+      "article": "5",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-5/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-5/p-1",
+      "article": "5",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-5/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-5/p-1",
+      "article": "5",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-6",
+      "type": "ARTICLE",
+      "parentLocator": "ch-2",
+      "article": "6",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-6/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-6/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-6/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-6/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-6/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-6/p-1/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "7"
+    },
+    {
+      "locator": "art-6/p-1/c-8",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "8"
+    },
+    {
+      "locator": "art-6/p-1/c-9",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "9"
+    },
+    {
+      "locator": "art-6/p-1/c-10",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "10"
+    },
+    {
+      "locator": "art-6/p-1/c-11",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "11"
+    },
+    {
+      "locator": "art-6/p-1/c-12",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "12"
+    },
+    {
+      "locator": "art-6/p-1/c-13",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "13"
+    },
+    {
+      "locator": "art-6/p-1/c-14",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-1",
+      "article": "6",
+      "paragraph": "1",
+      "clause": "14"
+    },
+    {
+      "locator": "art-6/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-5/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-5",
+      "article": "6",
+      "paragraph": "5",
+      "clause": "1"
+    },
+    {
+      "locator": "art-6/p-5/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-6/p-5",
+      "article": "6",
+      "paragraph": "5",
+      "clause": "2"
+    },
+    {
+      "locator": "art-6/p-6",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "6",
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-7",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "7",
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-8",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "8",
+      "clause": null
+    },
+    {
+      "locator": "art-6/p-9",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-6",
+      "article": "6",
+      "paragraph": "9",
+      "clause": null
+    },
+    {
+      "locator": "art-7",
+      "type": "ARTICLE",
+      "parentLocator": "ch-2",
+      "article": "7",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-7/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-7",
+      "article": "7",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-7/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-7/p-1",
+      "article": "7",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-7/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-7/p-1",
+      "article": "7",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-7/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-7/p-1",
+      "article": "7",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-7/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-7/p-1",
+      "article": "7",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-7/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-7/p-1",
+      "article": "7",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-7/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-7/p-1",
+      "article": "7",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-7/p-1/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-7/p-1",
+      "article": "7",
+      "paragraph": "1",
+      "clause": "7"
+    },
+    {
+      "locator": "art-7/p-1/c-8",
+      "type": "CLAUSE",
+      "parentLocator": "art-7/p-1",
+      "article": "7",
+      "paragraph": "1",
+      "clause": "8"
+    },
+    {
+      "locator": "art-8",
+      "type": "ARTICLE",
+      "parentLocator": "ch-2",
+      "article": "8",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-8/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-8",
+      "article": "8",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-8/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-8",
+      "article": "8",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-9",
+      "type": "ARTICLE",
+      "parentLocator": "ch-2",
+      "article": "9",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-9/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-9",
+      "article": "9",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-9/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-9",
+      "article": "9",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "ch-3",
+      "type": "CHAPTER",
+      "parentLocator": "doc",
+      "article": null,
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-10",
+      "type": "ARTICLE",
+      "parentLocator": "ch-3",
+      "article": "10",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-10/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-10",
+      "article": "10",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-10/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-10",
+      "article": "10",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-10/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-10",
+      "article": "10",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-10/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-10",
+      "article": "10",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-10/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-10",
+      "article": "10",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-10/p-6",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-10",
+      "article": "10",
+      "paragraph": "6",
+      "clause": null
+    },
+    {
+      "locator": "art-10/p-7",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-10",
+      "article": "10",
+      "paragraph": "7",
+      "clause": null
+    },
+    {
+      "locator": "art-11",
+      "type": "ARTICLE",
+      "parentLocator": "ch-3",
+      "article": "11",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-11/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-11",
+      "article": "11",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-11/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-11/p-1",
+      "article": "11",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-11/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-11/p-1",
+      "article": "11",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-11/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-11/p-1",
+      "article": "11",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-11/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-11/p-1",
+      "article": "11",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-11/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-11/p-1",
+      "article": "11",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-11/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-11",
+      "article": "11",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-11/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-11",
+      "article": "11",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-11/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-11",
+      "article": "11",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-11/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-11",
+      "article": "11",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-12",
+      "type": "ARTICLE",
+      "parentLocator": "ch-3",
+      "article": "12",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-12/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-12",
+      "article": "12",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-12/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-12",
+      "article": "12",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-12/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-12",
+      "article": "12",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-12/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-12",
+      "article": "12",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-13",
+      "type": "ARTICLE",
+      "parentLocator": "ch-3",
+      "article": "13",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-6",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "6",
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-7",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "7",
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-8",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "8",
+      "clause": null
+    },
+    {
+      "locator": "art-13/p-8/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-13/p-8",
+      "article": "13",
+      "paragraph": "8",
+      "clause": "1"
+    },
+    {
+      "locator": "art-13/p-8/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-13/p-8",
+      "article": "13",
+      "paragraph": "8",
+      "clause": "2"
+    },
+    {
+      "locator": "art-13/p-8/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-13/p-8",
+      "article": "13",
+      "paragraph": "8",
+      "clause": "3"
+    },
+    {
+      "locator": "art-13/p-8/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-13/p-8",
+      "article": "13",
+      "paragraph": "8",
+      "clause": "4"
+    },
+    {
+      "locator": "art-13/p-9",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-13",
+      "article": "13",
+      "paragraph": "9",
+      "clause": null
+    },
+    {
+      "locator": "art-14",
+      "type": "ARTICLE",
+      "parentLocator": "ch-3",
+      "article": "14",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-14/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-14",
+      "article": "14",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-14/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-14/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-14/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-14/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-14/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-14/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-14/p-1/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "7"
+    },
+    {
+      "locator": "art-14/p-1/c-8",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "8"
+    },
+    {
+      "locator": "art-14/p-1/c-9",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "9"
+    },
+    {
+      "locator": "art-14/p-1/c-10",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "10"
+    },
+    {
+      "locator": "art-14/p-1/c-11",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "11"
+    },
+    {
+      "locator": "art-14/p-1/c-12",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "12"
+    },
+    {
+      "locator": "art-14/p-1/c-13",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "13"
+    },
+    {
+      "locator": "art-14/p-1/c-14",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "14"
+    },
+    {
+      "locator": "art-14/p-1/c-15",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "15"
+    },
+    {
+      "locator": "art-14/p-1/c-16",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "16"
+    },
+    {
+      "locator": "art-14/p-1/c-17",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "17"
+    },
+    {
+      "locator": "art-14/p-1/c-18",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "18"
+    },
+    {
+      "locator": "art-14/p-1/c-19",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "19"
+    },
+    {
+      "locator": "art-14/p-1/c-20",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "20"
+    },
+    {
+      "locator": "art-14/p-1/c-21",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "21"
+    },
+    {
+      "locator": "art-14/p-1/c-22",
+      "type": "CLAUSE",
+      "parentLocator": "art-14/p-1",
+      "article": "14",
+      "paragraph": "1",
+      "clause": "22"
+    },
+    {
+      "locator": "art-14/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-14",
+      "article": "14",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-14/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-14",
+      "article": "14",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-14/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-14",
+      "article": "14",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-14/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-14",
+      "article": "14",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "ch-4",
+      "type": "CHAPTER",
+      "parentLocator": "doc",
+      "article": null,
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-15",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "15",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-15/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-15",
+      "article": "15",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-15/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-15",
+      "article": "15",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-15/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-15",
+      "article": "15",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-15/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-15",
+      "article": "15",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-15/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-15",
+      "article": "15",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-16",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "16",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-16/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-16",
+      "article": "16",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-16/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-16",
+      "article": "16",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-17",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "17",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-17/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-17",
+      "article": "17",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-18",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "18",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-18/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-18",
+      "article": "18",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-18/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-1",
+      "article": "18",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-18/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-1",
+      "article": "18",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-18/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-1",
+      "article": "18",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-18/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-1",
+      "article": "18",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-18/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-1",
+      "article": "18",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-18/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-1",
+      "article": "18",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-18/p-1/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-1",
+      "article": "18",
+      "paragraph": "1",
+      "clause": "7"
+    },
+    {
+      "locator": "art-18/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-18",
+      "article": "18",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-18/p-2/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-2",
+      "article": "18",
+      "paragraph": "2",
+      "clause": "1"
+    },
+    {
+      "locator": "art-18/p-2/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-2",
+      "article": "18",
+      "paragraph": "2",
+      "clause": "2"
+    },
+    {
+      "locator": "art-18/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-18",
+      "article": "18",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-18/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-18",
+      "article": "18",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-18/p-4/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "1"
+    },
+    {
+      "locator": "art-18/p-4/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "2"
+    },
+    {
+      "locator": "art-18/p-4/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "3"
+    },
+    {
+      "locator": "art-18/p-4/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "4"
+    },
+    {
+      "locator": "art-18/p-4/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "5"
+    },
+    {
+      "locator": "art-18/p-4/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "6"
+    },
+    {
+      "locator": "art-18/p-4/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "7"
+    },
+    {
+      "locator": "art-18/p-4/c-8",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "8"
+    },
+    {
+      "locator": "art-18/p-4/c-9",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "9"
+    },
+    {
+      "locator": "art-18/p-4/c-10",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "10"
+    },
+    {
+      "locator": "art-18/p-4/c-11",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "11"
+    },
+    {
+      "locator": "art-18/p-4/c-12",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "12"
+    },
+    {
+      "locator": "art-18/p-4/c-13",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "13"
+    },
+    {
+      "locator": "art-18/p-4/c-14",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "14"
+    },
+    {
+      "locator": "art-18/p-4/c-15",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "15"
+    },
+    {
+      "locator": "art-18/p-4/c-16",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "16"
+    },
+    {
+      "locator": "art-18/p-4/c-17",
+      "type": "CLAUSE",
+      "parentLocator": "art-18/p-4",
+      "article": "18",
+      "paragraph": "4",
+      "clause": "17"
+    },
+    {
+      "locator": "art-18/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-18",
+      "article": "18",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-18/p-6",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-18",
+      "article": "18",
+      "paragraph": "6",
+      "clause": null
+    },
+    {
+      "locator": "art-19",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "19",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-19/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-19",
+      "article": "19",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-19/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-19",
+      "article": "19",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-19/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-19",
+      "article": "19",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-19/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-19",
+      "article": "19",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-19/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-19",
+      "article": "19",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-20",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "20",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-20/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-20",
+      "article": "20",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-21",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "21",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-21/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-21",
+      "article": "21",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-21/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-21",
+      "article": "21",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-21/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-21",
+      "article": "21",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-21/p-3/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-21/p-3",
+      "article": "21",
+      "paragraph": "3",
+      "clause": "1"
+    },
+    {
+      "locator": "art-21/p-3/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-21/p-3",
+      "article": "21",
+      "paragraph": "3",
+      "clause": "2"
+    },
+    {
+      "locator": "art-21/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-21",
+      "article": "21",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-21/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-21",
+      "article": "21",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-21/p-6",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-21",
+      "article": "21",
+      "paragraph": "6",
+      "clause": null
+    },
+    {
+      "locator": "art-22",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "22",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-22/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-22",
+      "article": "22",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-22/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-22/p-1",
+      "article": "22",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-22/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-22/p-1",
+      "article": "22",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-22/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-22/p-1",
+      "article": "22",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-22/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-22",
+      "article": "22",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-22/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-22",
+      "article": "22",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-22/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-22",
+      "article": "22",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-22/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-22",
+      "article": "22",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-23",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "23",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-23/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-23",
+      "article": "23",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-23/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-23/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-23/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-23/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-23/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-23/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-23/p-1/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "7"
+    },
+    {
+      "locator": "art-23/p-1/c-8",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "8"
+    },
+    {
+      "locator": "art-23/p-1/c-9",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "9"
+    },
+    {
+      "locator": "art-23/p-1/c-10",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "10"
+    },
+    {
+      "locator": "art-23/p-1/c-11",
+      "type": "CLAUSE",
+      "parentLocator": "art-23/p-1",
+      "article": "23",
+      "paragraph": "1",
+      "clause": "11"
+    },
+    {
+      "locator": "art-23/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-23",
+      "article": "23",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-24",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "24",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-24/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-24",
+      "article": "24",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-24/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-24/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-24/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-24/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-24/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-24/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-24/p-1/c-7",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "7"
+    },
+    {
+      "locator": "art-24/p-1/c-8",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "8"
+    },
+    {
+      "locator": "art-24/p-1/c-9",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "9"
+    },
+    {
+      "locator": "art-24/p-1/c-10",
+      "type": "CLAUSE",
+      "parentLocator": "art-24/p-1",
+      "article": "24",
+      "paragraph": "1",
+      "clause": "10"
+    },
+    {
+      "locator": "art-24/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-24",
+      "article": "24",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-24/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-24",
+      "article": "24",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-25",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "25",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-25/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-25",
+      "article": "25",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-25/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-25/p-1",
+      "article": "25",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-25/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-25/p-1",
+      "article": "25",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-25/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-25/p-1",
+      "article": "25",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-25/p-1/c-4",
+      "type": "CLAUSE",
+      "parentLocator": "art-25/p-1",
+      "article": "25",
+      "paragraph": "1",
+      "clause": "4"
+    },
+    {
+      "locator": "art-25/p-1/c-5",
+      "type": "CLAUSE",
+      "parentLocator": "art-25/p-1",
+      "article": "25",
+      "paragraph": "1",
+      "clause": "5"
+    },
+    {
+      "locator": "art-25/p-1/c-6",
+      "type": "CLAUSE",
+      "parentLocator": "art-25/p-1",
+      "article": "25",
+      "paragraph": "1",
+      "clause": "6"
+    },
+    {
+      "locator": "art-25/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-25",
+      "article": "25",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-25/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-25",
+      "article": "25",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-26",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "26",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-26/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-26",
+      "article": "26",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-26/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-26",
+      "article": "26",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-26/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-26",
+      "article": "26",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-27",
+      "type": "ARTICLE",
+      "parentLocator": "ch-4",
+      "article": "27",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-27/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-27",
+      "article": "27",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-27/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-27",
+      "article": "27",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-27/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-27",
+      "article": "27",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-27/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-27",
+      "article": "27",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-27/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-27",
+      "article": "27",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "ch-5",
+      "type": "CHAPTER",
+      "parentLocator": "doc",
+      "article": null,
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-28",
+      "type": "ARTICLE",
+      "parentLocator": "ch-5",
+      "article": "28",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-28/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-28",
+      "article": "28",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-28/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-28",
+      "article": "28",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-29",
+      "type": "ARTICLE",
+      "parentLocator": "ch-5",
+      "article": "29",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-29/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-29",
+      "article": "29",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-29/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-29",
+      "article": "29",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-29/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-29",
+      "article": "29",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-29/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-29",
+      "article": "29",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-29/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-29",
+      "article": "29",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-29/p-6",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-29",
+      "article": "29",
+      "paragraph": "6",
+      "clause": null
+    },
+    {
+      "locator": "art-29/p-7",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-29",
+      "article": "29",
+      "paragraph": "7",
+      "clause": null
+    },
+    {
+      "locator": "art-29/p-8",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-29",
+      "article": "29",
+      "paragraph": "8",
+      "clause": null
+    },
+    {
+      "locator": "art-30",
+      "type": "ARTICLE",
+      "parentLocator": "ch-5",
+      "article": "30",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-6",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "6",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-7",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "7",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-8",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "8",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-9",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "9",
+      "clause": null
+    },
+    {
+      "locator": "art-30/p-10",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-30",
+      "article": "30",
+      "paragraph": "10",
+      "clause": null
+    },
+    {
+      "locator": "art-31",
+      "type": "ARTICLE",
+      "parentLocator": "ch-5",
+      "article": "31",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-31/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-31",
+      "article": "31",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-31/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-31",
+      "article": "31",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-31/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-31",
+      "article": "31",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-31/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-31",
+      "article": "31",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-32",
+      "type": "ARTICLE",
+      "parentLocator": "ch-5",
+      "article": "32",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-32/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-32",
+      "article": "32",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-32/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-32",
+      "article": "32",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-32/p-3",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-32",
+      "article": "32",
+      "paragraph": "3",
+      "clause": null
+    },
+    {
+      "locator": "art-32/p-4",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-32",
+      "article": "32",
+      "paragraph": "4",
+      "clause": null
+    },
+    {
+      "locator": "art-32/p-5",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-32",
+      "article": "32",
+      "paragraph": "5",
+      "clause": null
+    },
+    {
+      "locator": "art-32/p-6",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-32",
+      "article": "32",
+      "paragraph": "6",
+      "clause": null
+    },
+    {
+      "locator": "art-32^1",
+      "type": "ARTICLE",
+      "parentLocator": "ch-5",
+      "article": "32^1",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-32^1/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-32^1",
+      "article": "32^1",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-32^1/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-32^1/p-1",
+      "article": "32^1",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-32^1/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-32^1/p-1",
+      "article": "32^1",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-32^1/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-32^1/p-1",
+      "article": "32^1",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "ch-6",
+      "type": "CHAPTER",
+      "parentLocator": "doc",
+      "article": null,
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-33",
+      "type": "ARTICLE",
+      "parentLocator": "ch-6",
+      "article": "33",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-33/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-33",
+      "article": "33",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-33/p-1/c-1",
+      "type": "CLAUSE",
+      "parentLocator": "art-33/p-1",
+      "article": "33",
+      "paragraph": "1",
+      "clause": "1"
+    },
+    {
+      "locator": "art-33/p-1/c-2",
+      "type": "CLAUSE",
+      "parentLocator": "art-33/p-1",
+      "article": "33",
+      "paragraph": "1",
+      "clause": "2"
+    },
+    {
+      "locator": "art-33/p-1/c-3",
+      "type": "CLAUSE",
+      "parentLocator": "art-33/p-1",
+      "article": "33",
+      "paragraph": "1",
+      "clause": "3"
+    },
+    {
+      "locator": "art-33/p-2",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-33",
+      "article": "33",
+      "paragraph": "2",
+      "clause": null
+    },
+    {
+      "locator": "art-34",
+      "type": "ARTICLE",
+      "parentLocator": "ch-6",
+      "article": "34",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-34/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-34",
+      "article": "34",
+      "paragraph": "1",
+      "clause": null
+    },
+    {
+      "locator": "art-35",
+      "type": "ARTICLE",
+      "parentLocator": "ch-6",
+      "article": "35",
+      "paragraph": null,
+      "clause": null
+    },
+    {
+      "locator": "art-35/p-1",
+      "type": "PARAGRAPH",
+      "parentLocator": "art-35",
+      "article": "35",
+      "paragraph": "1",
+      "clause": null
+    }
+  ]
+}

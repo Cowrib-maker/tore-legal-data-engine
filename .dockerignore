@@ -1,0 +1,14 @@
+node_modules
+dist
+coverage
+.data
+.git
+.github
+apps
+packages
+docs
+.turbo
+*.md
+.env
+.env.local
+pnpm-lock.yaml

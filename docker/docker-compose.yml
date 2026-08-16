@@ -1,0 +1,32 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: tore
+      POSTGRES_PASSWORD: tore
+      POSTGRES_DB: tore_legal_data
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tore -d tore_legal_data"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://tore:tore@postgres:5432/tore_legal_data?schema=public
+      LOG_LEVEL: info
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["node", "apps/api/dist/index.js"]
+
+volumes:
+  postgres_data:

@@ -1,0 +1,338 @@
+// TORE Legal Data Engine — public-law corpus only.
+// No marketplace users, sessions, or PII.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum SourceType {
+  LEGISLATION
+  REGULATION
+  GOVERNMENT_RESOLUTION
+  MINISTERIAL_ORDER
+  SUPREME_COURT
+  CONSTITUTIONAL_COURT
+  TREATY
+  INTERPRETATION
+  OTHER
+}
+
+enum TrustLevel {
+  OFFICIAL
+  SECONDARY
+  UNVERIFIED
+}
+
+enum DocumentType {
+  LAW
+  REGULATION
+  GOVERNMENT_RESOLUTION
+  MINISTERIAL_ORDER
+  SUPREME_COURT_DECISION
+  CONSTITUTIONAL_COURT_DECISION
+  TREATY
+  INTERPRETATION
+  OTHER
+}
+
+enum DocumentStatus {
+  DRAFT
+  IN_FORCE
+  AMENDED
+  REPEALED
+  SUPERSEDED
+  UNKNOWN
+}
+
+enum VersionStatus {
+  DRAFT
+  PUBLISHED
+  SUPERSEDED
+  WITHDRAWN
+}
+
+enum LegalNodeType {
+  DOCUMENT
+  BOOK
+  PART
+  CHAPTER
+  SECTION
+  ARTICLE
+  PARAGRAPH
+  CLAUSE
+  SUB_CLAUSE
+  ANNEX
+}
+
+enum RelationType {
+  AMENDS
+  REPEALS
+  SUPERSEDES
+  IMPLEMENTS
+  INTERPRETS
+  CITES
+  CONTAINS
+}
+
+enum CitationStatus {
+  VALID
+  UNRESOLVED
+  CONFLICT
+}
+
+enum IngestJobType {
+  FETCH
+  PARSE
+  INDEX
+  REVALIDATE
+}
+
+enum IngestJobStatus {
+  PENDING
+  RUNNING
+  SUCCEEDED
+  FAILED
+  CANCELLED
+}
+
+enum ParseReviewStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+  NEEDS_REVISION
+}
+
+model LegalSource {
+  id            String     @id @default(cuid())
+  name          String
+  type          SourceType
+  authority     String
+  jurisdiction  String
+  baseUrl       String     @map("base_url")
+  trustLevel    TrustLevel @map("trust_level")
+  isActive      Boolean    @default(true) @map("is_active")
+  lastCheckedAt DateTime?  @map("last_checked_at")
+  createdAt     DateTime   @default(now()) @map("created_at")
+  updatedAt     DateTime   @updatedAt @map("updated_at")
+
+  documents   LegalDocument[]
+  ingestJobs  IngestJob[]
+  archives    ArchiveRecord[]
+
+  @@unique([jurisdiction, type, baseUrl])
+  @@index([jurisdiction, isActive])
+  @@map("legal_sources")
+}
+
+model ArchiveRecord {
+  id               String   @id @default(cuid())
+  sourceId         String?  @map("source_id")
+  sha256           String   @unique
+  originalUrl      String   @map("original_url")
+  retrievedAt      DateTime @map("retrieved_at")
+  mimeType         String   @map("mime_type")
+  byteSize         Int      @map("byte_size")
+  storageKey       String   @unique @map("storage_key")
+  originalFileName String   @map("original_file_name")
+  encoding         String?
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  source           LegalSource?            @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  documentVersions LegalDocumentVersion[]
+  parseReviews     ParseReview[]
+
+  @@index([originalUrl])
+  @@index([sourceId])
+  @@map("archive_records")
+}
+
+model LegalDocument {
+  id                String         @id @default(cuid())
+  sourceId          String         @map("source_id")
+  documentType      DocumentType   @map("document_type")
+  title             String
+  documentNumber    String?        @map("document_number")
+  issuingAuthority  String         @map("issuing_authority")
+  jurisdiction      String
+  adoptedAt         DateTime?      @map("adopted_at")
+  canonicalUrl      String         @map("canonical_url")
+  status            DocumentStatus
+  createdAt         DateTime       @default(now()) @map("created_at")
+  updatedAt         DateTime       @updatedAt @map("updated_at")
+
+  source           LegalSource            @relation(fields: [sourceId], references: [id], onDelete: Restrict)
+  versions         LegalDocumentVersion[]
+  parseReviews     ParseReview[]
+  amendmentsOf     LegalDocumentVersion[] @relation("AmendmentInstrument")
+
+  @@unique([sourceId, canonicalUrl])
+  @@index([jurisdiction, documentType, status])
+  @@index([issuingAuthority])
+  @@map("legal_documents")
+}
+
+model LegalDocumentVersion {
+  id                   String        @id @default(cuid())
+  documentId           String        @map("document_id")
+  versionNumber        Int           @map("version_number")
+  effectiveFrom        DateTime?     @map("effective_from")
+  effectiveTo          DateTime?     @map("effective_to")
+  contentHash          String        @map("content_hash")
+  parserId             String        @map("parser_id")
+  status               VersionStatus
+  amendmentDocumentId  String?       @map("amendment_document_id")
+  archiveRecordId      String        @map("archive_record_id")
+  createdAt            DateTime      @default(now()) @map("created_at")
+
+  document           LegalDocument  @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  amendmentDocument  LegalDocument? @relation("AmendmentInstrument", fields: [amendmentDocumentId], references: [id], onDelete: SetNull)
+  archiveRecord      ArchiveRecord  @relation(fields: [archiveRecordId], references: [id], onDelete: Restrict)
+  nodes              LegalNode[]
+  citations          CitationEntry[]
+
+  @@unique([documentId, versionNumber])
+  @@unique([documentId, contentHash, parserId])
+  @@index([archiveRecordId])
+  @@index([contentHash])
+  @@index([parserId])
+  @@index([effectiveFrom, effectiveTo])
+  @@index([status])
+  @@map("legal_document_versions")
+}
+
+model LegalNode {
+  id                String        @id @default(cuid())
+  documentVersionId String        @map("document_version_id")
+  parentId          String?       @map("parent_id")
+  nodeType          LegalNodeType @map("node_type")
+  book              String?
+  part              String?
+  chapter           String?
+  section           String?
+  article           String?
+  paragraph         String?
+  clause            String?
+  subClause         String?       @map("sub_clause")
+  number            String?
+  title             String?
+  text              String        @db.Text
+  sourceLocator     String        @map("source_locator")
+  contentHash       String        @map("content_hash")
+  createdAt         DateTime      @default(now()) @map("created_at")
+  updatedAt         DateTime      @updatedAt @map("updated_at")
+
+  documentVersion LegalDocumentVersion @relation(fields: [documentVersionId], references: [id], onDelete: Cascade)
+  parent          LegalNode?           @relation("NodeHierarchy", fields: [parentId], references: [id], onDelete: Cascade)
+  children        LegalNode[]          @relation("NodeHierarchy")
+  outgoing        LegalRelation[]      @relation("RelationFrom")
+  incoming        LegalRelation[]      @relation("RelationTo")
+  citations       CitationEntry[]
+
+  @@unique([documentVersionId, sourceLocator])
+  @@index([parentId])
+  @@index([documentVersionId, nodeType])
+  @@index([article, paragraph])
+  @@index([contentHash])
+  @@map("legal_nodes")
+}
+
+model LegalRelation {
+  id           String       @id @default(cuid())
+  fromNodeId   String       @map("from_node_id")
+  toNodeId     String       @map("to_node_id")
+  relationType RelationType @map("relation_type")
+  metadata     Json?
+
+  fromNode LegalNode @relation("RelationFrom", fields: [fromNodeId], references: [id], onDelete: Cascade)
+  toNode   LegalNode @relation("RelationTo", fields: [toNodeId], references: [id], onDelete: Cascade)
+
+  @@unique([fromNodeId, toNodeId, relationType])
+  @@index([toNodeId])
+  @@map("legal_relations")
+}
+
+model CitationEntry {
+  id                String         @id @default(cuid())
+  documentVersionId String         @map("document_version_id")
+  legalNodeId       String         @map("legal_node_id")
+  citationKey       String         @map("citation_key")
+  locator           String
+  exactText         String         @map("exact_text") @db.Text
+  sourceUrl         String         @map("source_url")
+  contentHash       String         @map("content_hash")
+  status            CitationStatus
+  createdAt         DateTime       @default(now()) @map("created_at")
+  updatedAt         DateTime       @updatedAt @map("updated_at")
+
+  documentVersion LegalDocumentVersion @relation(fields: [documentVersionId], references: [id], onDelete: Cascade)
+  legalNode       LegalNode            @relation(fields: [legalNodeId], references: [id], onDelete: Cascade)
+
+  @@unique([documentVersionId, citationKey])
+  @@unique([documentVersionId, legalNodeId])
+  @@index([status])
+  @@index([legalNodeId])
+  @@index([citationKey])
+  @@index([contentHash])
+  @@index([locator])
+  @@map("citation_entries")
+}
+
+model IngestJob {
+  id          String          @id @default(cuid())
+  sourceId    String          @map("source_id")
+  jobType     IngestJobType   @map("job_type")
+  status      IngestJobStatus
+  url         String?
+  startedAt   DateTime?       @map("started_at")
+  completedAt DateTime?       @map("completed_at")
+  error       String?         @db.Text
+  retryCount  Int             @default(0) @map("retry_count")
+  metadata    Json?
+  createdAt   DateTime        @default(now()) @map("created_at")
+
+  source LegalSource @relation(fields: [sourceId], references: [id], onDelete: Restrict)
+
+  @@index([sourceId, status])
+  @@index([jobType, status])
+  @@index([createdAt])
+  @@map("ingest_jobs")
+}
+
+model ParseReview {
+  id              String            @id @default(cuid())
+  documentId      String            @map("document_id")
+  archiveRecordId String            @map("archive_record_id")
+  status          ParseReviewStatus
+  reason          String            @db.Text
+  parsedPayload   Json              @map("parsed_payload")
+  reviewedBy      String?           @map("reviewed_by")
+  reviewedAt      DateTime?         @map("reviewed_at")
+  createdAt       DateTime          @default(now()) @map("created_at")
+
+  document      LegalDocument @relation(fields: [documentId], references: [id], onDelete: Restrict)
+  archiveRecord ArchiveRecord @relation(fields: [archiveRecordId], references: [id], onDelete: Restrict)
+
+  @@index([status])
+  @@index([documentId])
+  @@map("parse_reviews")
+}
+
+model EngineAuditLog {
+  id         String   @id @default(cuid())
+  actor      String
+  action     String
+  entityType String   @map("entity_type")
+  entityId   String?  @map("entity_id")
+  metadata   Json?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@index([entityType, entityId])
+  @@index([actor])
+  @@index([createdAt])
+  @@map("engine_audit_logs")
+}

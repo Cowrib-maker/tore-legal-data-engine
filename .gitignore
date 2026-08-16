@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+generated/
+.turbo/
+.env
+.env.local
+.data/
+*.log
+.DS_Store
+.idea/
+.vscode/
+apps/scraper/data/archive/
+apps/scraper/data/checkpoints/
