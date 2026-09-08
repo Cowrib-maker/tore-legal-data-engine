@@ -16,6 +16,8 @@ const ARTICLE_RE =
   /^(\d+)(?:\^(\d+))?\s*(?:дүгээр|дугаар|дэх)\s*зүйл(?:[.\s:—-]+(.*))?$/i;
 const COMPOUND_ARTICLE_RE =
   /^(\d+\.\d+)(?:\^(\d+))?\s*(?:дүгээр|дугаар|дэх)\s*зүйл(?:[.\s:—-]+(.*))?$/i;
+const ARTICLE_WORD_RE =
+  /^(?:(АРВАН|ХОРИН|ГУЧИН|ДӨЧИН|ТАВИН)\s+)?(НЭГДҮГЭЭР|ХОЁРДУГААР|ГУРАВДУГААР|ДӨРӨВДҮГЭЭР|ТАВДУГААР|ЗУРГАДУГААР|ЗУРГААДУГААР|ДОЛООДУГААР|ДОЛДУГААР|НАЙМДУГААР|ЕСДҮГЭЭР|АРАВДУГААР|ХОРЬДУГААР|ГУЧДУГААР|ДӨЧДҮГЭЭР)(?:\^(\d+))?\s+ЗҮЙЛ(?:[.\s:—-]*(.*))?$/i;
 const QUALIFIED_RE =
   /^(\d+)(?:\^(\d+))?\.(\d+)(?:\.(\d+))?(?:\.(\d+))?\.?\s*(.*)$/;
 const SIMPLE_PARA_RE = /^(\d+)(?:[.)]|\/)\s*(.*)$/;
@@ -105,6 +107,27 @@ export class LegalInfoHtmlParser implements ILegalParser {
         });
         root.children.push(currentChapter);
         currentArticle = null;
+        currentParagraph = null;
+        currentClause = null;
+        continue;
+      }
+
+      const wordArticleMatch = parseArticleWordHeading(line);
+      if (wordArticleMatch) {
+        const number = wordArticleMatch.number;
+        const parent = articleParent();
+        currentArticle = makeNode({
+          documentVersionId: versionId,
+          parentId: parent.id,
+          nodeType: LegalNodeType.ARTICLE,
+          sourceLocator: `art-${number}`,
+          article: number,
+          chapter: currentChapter?.chapter ?? null,
+          number,
+          title: wordArticleMatch.title || `Article ${number}`,
+          text: line,
+        });
+        parent.children.push(currentArticle);
         currentParagraph = null;
         currentClause = null;
         continue;
@@ -277,6 +300,21 @@ function parseChapterHeading(line: string): { number: string; bis?: string } | n
   const number = String(tens !== undefined ? tens + unit : unit);
   const bis = match[3] || match[4] || undefined;
   return { number, bis };
+}
+
+function parseArticleWordHeading(line: string): { number: string; title?: string } | null {
+  const match = line.match(ARTICLE_WORD_RE);
+  if (!match) {
+    return null;
+  }
+  const tens = match[1] ? CHAPTER_TENS[match[1].toUpperCase()] : undefined;
+  const unit = CHAPTER_UNITS[match[2]?.toUpperCase() ?? ""];
+  if (unit === undefined) {
+    return null;
+  }
+  const number = String(tens !== undefined ? tens + unit : unit);
+  const title = match[3]?.trim() || undefined;
+  return { number, title };
 }
 
 function findArticle(root: LegalNode, article: string): LegalNode | null {

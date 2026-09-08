@@ -11,8 +11,8 @@ export class PrismaUnitOfWork implements UnitOfWork {
 
   run<T>(work: (repos: EngineRepositories) => Promise<T>): Promise<T> {
     return this.prisma.$transaction((tx) => work(createRepositories(tx)), {
-      maxWait: 15_000,
-      timeout: 180_000,
+      maxWait: 30_000,
+      timeout: 600_000,
     });
   }
 }
