@@ -156,7 +156,12 @@ function toAuthority(
     documentId,
     documentVersionId: version.id,
     locator: node.sourceLocator,
-    title: node.title ?? node.sourceLocator,
+    // sourceLocator is an opaque technical identity (may carry a
+    // `__legacyId-<cuid>` disambiguation suffix — see
+    // src/domain/services/legacy-article-locator.ts) and must never reach
+    // human-facing output. Prefer the real legal citation (article number)
+    // before ever falling back to it.
+    title: node.title ?? (node.article ? `Article ${node.article}` : node.sourceLocator),
     excerpt: node.text.slice(0, 500),
     contentHash: node.contentHash,
     sourceContentHash: version.contentHash,
