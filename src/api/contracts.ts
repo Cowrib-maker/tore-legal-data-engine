@@ -60,6 +60,7 @@ export const retrieveRequestSchema = z.object({
         nodeId: z.string().nullable().optional(),
       }),
     )
+    .max(50)
     .optional(),
   asOf: z.string().nullable().optional(),
   documentId: z.string().nullable().optional(),

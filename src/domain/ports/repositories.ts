@@ -8,6 +8,7 @@ import type {
   LegalDocument,
   LegalDocumentVersion,
   LegalNode,
+  LegalNodeSearchCandidate,
   LegalRelation,
   LegalSource,
   ParseReview,
@@ -91,6 +92,14 @@ export interface LegalDocumentVersionRepository {
   ): Promise<LegalDocumentVersion | null>;
 }
 
+export type SearchLegalNodeCandidates = {
+  /** Already normalized (whitespace-collapsed, trimmed). Never logged raw. */
+  normalizedQuestion: string;
+  /** Version statuses eligible as candidates (PUBLISHED, or PUBLISHED+SUPERSEDED for asOf). */
+  statuses: readonly VersionStatus[];
+  limit: number;
+};
+
 export interface LegalNodeRepository {
   replaceForVersion(
     documentVersionId: string,
@@ -102,6 +111,15 @@ export interface LegalNodeRepository {
     sourceLocator: string,
   ): Promise<LegalNode | null>;
   findTreeByVersion(documentVersionId: string): Promise<LegalNode[]>;
+  /**
+   * Ranked full-text + trigram candidate search (open-question retrieval).
+   * Does not apply asOf interval filtering or dedup — see
+   * domain/services/open-question-search.ts, which callers must apply to
+   * this method's output before treating results as authoritative.
+   */
+  searchCandidates(
+    input: SearchLegalNodeCandidates,
+  ): Promise<LegalNodeSearchCandidate[]>;
 }
 
 export type SaveLegalRelation = {

@@ -1,4 +1,5 @@
 import type { LegalNode } from "../../domain/entities.js";
+import { VersionStatus } from "../../domain/enums.js";
 import type {
   RetrievalPort,
   RetrieveRequest,
@@ -9,7 +10,13 @@ import { RetrieveStatus } from "../../domain/ports/retrieval.js";
 import type { EngineRepositories } from "../../domain/ports/repositories.js";
 import { flattenLegalNodes } from "../../domain/services/legal-node-hierarchy.js";
 import { versionCoversInstant } from "../../domain/services/document-version.js";
+import {
+  filterAndDedupeCandidates,
+  MAX_OPEN_QUESTION_CANDIDATES,
+  normalizeOpenQuestion,
+} from "../../domain/services/open-question-search.js";
 import { parseExactCitationQuery } from "../citations/parse-citation-query.js";
+import { logRetrievalEvent } from "../logging/retrieval-log.js";
 
 const MAX_AUTHORITIES = 100;
 
@@ -135,7 +142,50 @@ export class CorpusRetrieval implements RetrievalPort {
       return collected;
     }
 
-    return [];
+    const question = normalizeOpenQuestion(request.question ?? "");
+    if (!question) {
+      return [];
+    }
+    return this.searchOpenQuestion(question, request.asOf ?? null);
+  }
+
+  /**
+   * Bare-question retrieval: ranked FTS + trigram candidates over PUBLISHED
+   * (or PUBLISHED+SUPERSEDED under asOf) nodes only. Returns sources, never
+   * an answer — same contract as every other lookup() branch.
+   */
+  private async searchOpenQuestion(
+    question: string,
+    asOf: string | null,
+  ): Promise<RetrievedAuthority[]> {
+    const statuses: VersionStatus[] = asOf
+      ? [VersionStatus.PUBLISHED, VersionStatus.SUPERSEDED]
+      : [VersionStatus.PUBLISHED];
+    const start = Date.now();
+    const candidates = await this.repos.nodes.searchCandidates({
+      normalizedQuestion: question,
+      statuses,
+      limit: MAX_OPEN_QUESTION_CANDIDATES,
+    });
+    const filtered = filterAndDedupeCandidates(candidates, asOf);
+    logRetrievalEvent({
+      operation: "retrieveOpenQuestion",
+      candidateCount: candidates.length,
+      resultCount: filtered.length,
+      latencyMs: Date.now() - start,
+      zeroResult: filtered.length === 0,
+      asOf: Boolean(asOf),
+    });
+    return filtered.map((candidate) =>
+      toAuthority({ ...candidate.node, children: [] }, candidate.documentId, {
+        id: candidate.versionId,
+        contentHash: candidate.sourceContentHash,
+        parserId: candidate.parserId,
+        archiveRecordId: candidate.archiveRecordId,
+        effectiveFrom: candidate.effectiveFrom,
+        effectiveTo: candidate.effectiveTo,
+      }),
+    );
   }
 }
 

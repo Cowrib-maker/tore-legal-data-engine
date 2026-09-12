@@ -233,6 +233,14 @@ model LegalNode {
   incoming        LegalRelation[]      @relation("RelationTo")
   citations       CitationEntry[]
 
+  /// Generated column (to_tsvector('simple', title || text)), GIN-indexed.
+  /// Populated by Postgres itself — never written by Prisma Client. See
+  /// migration 20260913000000_open_question_search. `simple` config is used
+  /// deliberately: Postgres ships no Mongolian text-search config, and
+  /// `simple` (tokenize + lowercase, no stemming/stopwords) is safer than
+  /// misapplying an unrelated language's stemming rules.
+  searchVector Unsupported("tsvector")? @map("search_vector")
+
   @@unique([documentVersionId, sourceLocator])
   @@index([parentId])
   @@index([documentVersionId, nodeType])

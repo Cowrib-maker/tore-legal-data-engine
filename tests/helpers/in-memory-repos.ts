@@ -8,6 +8,7 @@ import type {
   LegalDocument,
   LegalDocumentVersion,
   LegalNode,
+  LegalNodeSearchCandidate,
   LegalRelation,
   LegalSource,
   ParseReview,
@@ -41,6 +42,7 @@ import type {
   SaveLegalRelation,
   SaveLegalSource,
   SaveParseReview,
+  SearchLegalNodeCandidates,
   UnitOfWork,
 } from "../../src/domain/ports/repositories.js";
 import {
@@ -185,6 +187,41 @@ export function createInMemoryRepositories(): {
         return assembleLegalNodeTree(
           [...nodes.values()].filter((item) => item.documentVersionId === documentVersionId),
         );
+      },
+      // Case-insensitive substring/token-overlap scorer. Not a real FTS/trigram
+      // stand-in — only exercises the status/asOf/dedup logic in unit tests.
+      // Real ranking behavior is verified against Postgres in
+      // tests/integration/open-question-retrieval.test.ts.
+      async searchCandidates(input: SearchLegalNodeCandidates) {
+        const needle = input.normalizedQuestion.toLocaleLowerCase("mn");
+        const terms = needle.split(/\s+/).filter((t) => t.length >= 3);
+        const out: LegalNodeSearchCandidate[] = [];
+        for (const node of nodes.values()) {
+          const version = versions.get(node.documentVersionId);
+          if (!version || !input.statuses.includes(version.status)) {
+            continue;
+          }
+          const haystack = `${node.title ?? ""} ${node.text}`.toLocaleLowerCase("mn");
+          const matchedTerms = terms.filter((term) => haystack.includes(term));
+          const wholeMatch = haystack.includes(needle);
+          if (matchedTerms.length === 0 && !wholeMatch) {
+            continue;
+          }
+          out.push({
+            node,
+            documentId: version.documentId,
+            versionId: version.id,
+            versionStatus: version.status,
+            effectiveFrom: version.effectiveFrom,
+            effectiveTo: version.effectiveTo,
+            sourceContentHash: version.contentHash,
+            parserId: version.parserId,
+            archiveRecordId: version.archiveRecordId,
+            score: matchedTerms.length + (wholeMatch ? 1 : 0),
+          });
+        }
+        out.sort((a, b) => b.score - a.score);
+        return out.slice(0, input.limit);
       },
     } satisfies LegalNodeRepository,
     relations: {

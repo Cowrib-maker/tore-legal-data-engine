@@ -12,6 +12,25 @@ import type {
   VersionStatus,
 } from "./enums.js";
 
+/**
+ * One ranked open-question retrieval candidate. `score` is a raw SQL-side
+ * blend (ts_rank_cd + trigram similarity) with no fixed scale/meaning
+ * outside the query that produced it — never persisted, never compared
+ * across separate queries.
+ */
+export type LegalNodeSearchCandidate = {
+  node: Omit<LegalNode, "children">;
+  documentId: string;
+  versionId: string;
+  versionStatus: VersionStatus;
+  effectiveFrom: string | null;
+  effectiveTo: string | null;
+  sourceContentHash: string;
+  parserId: string;
+  archiveRecordId: string;
+  score: number;
+};
+
 /** Pointer back to the immutable archived original. No PII. */
 export type Provenance = {
   sourceId: string;
